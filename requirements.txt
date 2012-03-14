@@ -1,3 +1,4 @@
 gevent==0.13.6
 gevent-websocket==0.3.0
+greenlet==0.3.4
 simplejson==2.4.0
