@@ -13,6 +13,7 @@ To run the dev server
 ---------------------
 
     pip install -r requirements.txt
+    pip install -r requirements_dev.txt
     python gevent_sockjs/devserver.py
 
 To run tests
