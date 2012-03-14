@@ -23,12 +23,15 @@ Will create a `sockjs` virtualenv in either your WORKON_HOME or in
 the currrent directory if you don't have virtualenvwrapper.
 
     make tests/Makefile
-    setup.py test
 
 Or manually:
 
     mkvirtualenv sockjs
     pip install -r tests/test_deps.txt
+
+Run the tests:
+
+    python setup.py test
 
 Test Status:
 ============

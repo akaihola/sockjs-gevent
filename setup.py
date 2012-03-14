@@ -4,12 +4,17 @@ from setuptools import setup, find_packages
 version='0.1dev'
 
 install_requires = [
+    'greenlet==0.3.4',
     'setuptools',
-    'gevent',
-    'gevent-websocket',
+    'gevent==0.13.6',
+    'gevent-websocket==0.3.0',
 ]
 
-tests_require = install_requires + ['nose']
+tests_require = install_requires + ['nose==1.1.2',
+                                    'unittest2==0.5.1',
+                                    # ws4py from GitHub
+                                    # Websocket-for-Python from GitHub
+                                    ]
 
 def read(f):
     return open(os.path.join(os.path.dirname(__file__), f)).read().strip()
